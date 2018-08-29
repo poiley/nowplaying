@@ -1,0 +1,28 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Now Playing</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"}}" />
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menuList">
+            <li><a href="https://poile.me/">me</a></li>
+            <li><a href="https://github.com/poiley/nowplaying/">the code</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="artwork">
+            <img class="image" src="{{ art_url }}"></img>
+        </div>
+        <div class="metadata">
+            <span>{{ song }}</span> <br>
+            <span>{{ artist }}</span> <br>
+            <span>{{ album }}</span>
+        </div>
+    </div>
+</body>
+</html>

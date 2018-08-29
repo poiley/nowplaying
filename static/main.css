@@ -1,0 +1,61 @@
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.artwork {
+    height: 60%;
+    padding: 10px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+}
+
+.metadata {
+    height: 30%;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 16pt;
+    font-family: "CooperHewitt";
+    line-height: 40px;
+}
+
+.metadata * {
+    padding: 10px;
+}
+
+.menu {
+    font-size: 12pt;
+    font-family: "Menlo";
+    width: 15%;
+    float: left;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+}
+
+.menuList {
+    list-style-type: none;
+    line-height: 20pt;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Menlo';  
+  src: url('menlo.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('CooperHewitt.woff') format('woff');
+}
