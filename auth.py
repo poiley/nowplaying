@@ -1,5 +1,4 @@
-import sys
-import json
+import sys, json, os
 import spotipy.util as util
 import spotipy.oauth2 as oauth2
 
@@ -28,7 +27,7 @@ class spotify_auth:
         return self.client_secret
 
     def get_redirect_uri(self):
-        return redirect_uri
+        return self.redirect_uri
 
     def get_user_token(self):
         return self.user_token
